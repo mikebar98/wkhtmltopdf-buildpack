@@ -26,6 +26,6 @@ mv $WKHTMLTOPDF_BINARIES/* $BIN_PATH/
 echo "-----> Cleaning up"
 rm -rf $WKHTMLTOPDF_PKG $WKHTMLTOPDF_PATH
 
-export PATH=BIN_PATH:$PATH
+export PATH=$BIN_PATH:$PATH
 
 exit 0
