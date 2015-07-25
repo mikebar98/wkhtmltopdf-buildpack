@@ -27,4 +27,4 @@ echo "-----> Cleaning up"
 rm -rf $WKHTMLTOPDF_PKG $WKHTMLTOPDF_PATH
 
 mkdir -p $BIN_PATH/.profile.d
-echo 'PATH=$PATH:$HOME/vendor/wkhtmltox' > $build/.profile.d/wkhtmltopdf.sh
+echo 'PATH=$PATH:$HOME/vendor/wkhtmltox' > $1/.profile.d/wkhtmltopdf.sh
