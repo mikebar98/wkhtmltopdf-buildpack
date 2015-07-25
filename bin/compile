@@ -2,8 +2,8 @@
 
 set -e
 
-BIN_PATH="/app/buildpacks/wkhtmltox"
-TMP_PATH="$1/bp/tmp"
+BIN_PATH="$1/vendor/wkhtmltox"
+TMP_PATH="$1/tmp"
 mkdir -p $BIN_PATH $TMP_PATH
 
 WKHTMLTOPDF_URL="http://download.gna.org/wkhtmltopdf/0.12/0.12.2.1/wkhtmltox-0.12.2.1_linux-trusty-amd64.deb"
@@ -25,7 +25,3 @@ mv $WKHTMLTOPDF_BINARIES/* $BIN_PATH/
 
 echo "-----> Cleaning up"
 rm -rf $WKHTMLTOPDF_PKG $WKHTMLTOPDF_PATH
-
-export PATH=$BIN_PATH:$PATH
-
-exit 0
