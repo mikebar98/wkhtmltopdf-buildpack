@@ -17,10 +17,10 @@ curl -L $WKHTMLTOPDF_URL -o $WKHTMLTOPDF_PKG
 echo "-----> Unpacking Debian package"
 dpkg -x $WKHTMLTOPDF_PKG $WKHTMLTOPDF_PATH
 
-echo "-----> Setting permissions"
+echo "-----> Setting permissions: $WKHTMLTOPDF_BINARIES"
 chmod +x $WKHTMLTOPDF_BINARIES/*
 
-echo "-----> Moving binaries to the right place"
+echo "-----> Moving binaries to the right place: $BIN_PATH"
 mv $WKHTMLTOPDF_BINARIES/* $BIN_PATH/
 
 echo "-----> Cleaning up"
