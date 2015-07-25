@@ -1,2 +1,8 @@
 #!/usr/bin/env bash
-echo "--- {}"
+cat << EOF
+---
+addons:
+config_vars:
+  PATH: /app/buildpacks/wkhtmltox:$PATH
+EOF
+
