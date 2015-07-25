@@ -2,7 +2,7 @@
 
 set -e
 
-BIN_PATH=$(cd "$(dirname $0)/.." && pwd)
+BIN_PATH="/app/buildpacks/wkhtmltox"
 TMP_PATH="$1/bp/tmp"
 mkdir -p $BIN_PATH $TMP_PATH
 
