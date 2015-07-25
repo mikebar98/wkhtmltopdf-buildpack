@@ -2,7 +2,7 @@
 
 set -e
 
-BIN_PATH="$1/bp/bin"
+BIN_PATH=$(cd "$(dirname $0)/.." && pwd)
 TMP_PATH="$1/bp/tmp"
 mkdir -p $BIN_PATH $TMP_PATH
 
@@ -25,5 +25,7 @@ mv $WKHTMLTOPDF_BINARIES/* $BIN_PATH/
 
 echo "-----> Cleaning up"
 rm -rf $WKHTMLTOPDF_PKG $WKHTMLTOPDF_PATH
+
+export PATH=BIN_PATH:$PATH
 
 exit 0
