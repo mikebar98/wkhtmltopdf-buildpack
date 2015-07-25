@@ -25,5 +25,3 @@ mv $WKHTMLTOPDF_BINARIES/* $BIN_PATH/
 
 echo "-----> Cleaning up"
 rm -rf $WKHTMLTOPDF_PKG $WKHTMLTOPDF_PATH
-
-ln -s $BIN_PATH/wkhtmltopdf /usr/local/bin/wkhtmltopdf
