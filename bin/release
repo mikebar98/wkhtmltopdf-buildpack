@@ -3,6 +3,6 @@ cat << EOF
 ---
 addons:
 config_vars:
-  PATH: /app/buildpacks/wkhtmltox:$PATH
+  PATH: /app/vendor/wkhtmltox:$PATH
 EOF
 
