@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 set -e
+# fix locale here
+locale-gen en_US.UTF-8
 
 BIN_PATH="$1/vendor/wkhtmltox"
 TMP_PATH="$1/tmp"
