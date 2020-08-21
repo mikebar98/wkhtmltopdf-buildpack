@@ -5,8 +5,8 @@ set -e
 #locale-gen en_US.UTF-8
 #export LC_ALL="en_US.UTF-8"
 
-BIN_PATH="/bin"
-TMP_PATH="$1/tmp"
+BIN_PATH="/app/vendor/wkhtml/bin"
+TMP_PATH="/tmp"
 mkdir -p $BIN_PATH $TMP_PATH
 
 WKHTMLTOPDF_URL="https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.buster_amd64.deb"
